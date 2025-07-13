@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+if (isset($_SESSION['login']) && $_SESSION['login']['admin'] == 1) {
+} else if (isset($_SESSION['login']) && $_SESSION['login']['admin'] == 0) {
+    header("location:read.php");
+} else {
+    header("location:read.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,10 +63,10 @@ if (isset($_POST['title'], $_POST['price']) && $_POST['title'] !== "" && $_POST[
         </html>
 <?php
         echo "<script>
-    setTimeout(function() {
-        window.location.href = 'read.php';
-    }, 1000);
-</script>";
+            setTimeout(function() {
+            window.location.href = 'read.php';
+            }, 1000);
+        </script>";
     }
 }
 

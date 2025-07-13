@@ -1,0 +1,8 @@
+.child-login-or-creat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-login-or-creat a {
+    justify-content: space-between;
+}

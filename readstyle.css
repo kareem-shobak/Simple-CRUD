@@ -1,3 +1,12 @@
 #add-button {
     margin: 10px;
 }
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+#update-btn {
+    color: white !important;
+}
